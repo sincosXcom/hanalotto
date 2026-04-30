@@ -53,12 +53,12 @@ def load_card_images():
         radius = 16
         x = img.width - radius - 5
         y = img.height - radius - 5
-        draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=(255,0,0))
+        draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=(255, 255, 255))
         text = str(i)
         bbox = draw.textbbox((0,0), text, font=font)
         text_w = bbox[2] - bbox[0]
         text_h = bbox[3] - bbox[1]
-        draw.text((x - text_w//2, y - text_h//2), text, fill=(255,255,255), font=font)
+        draw.text((x - text_w//2, y - text_h//2), text, fill=(255,0,0), font=font)
         images[i] = img
     return images
 
