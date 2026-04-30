@@ -37,7 +37,7 @@ def load_lotto_data():
 def load_card_images():
     images = {}
     try:
-        font = ImageFont.truetype("arial.ttf", 28)
+        font = ImageFont.truetype("arial.ttf", 20)
     except:
         font = ImageFont.load_default()
     for i in range(1, 46):
