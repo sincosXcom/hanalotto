@@ -19,3 +19,6 @@ Hanafuda+Korea Lotto
 
 ## 数据格式要求
 CSV 需包含列：`issue, date, n1, n2, n3, n4, n5, n6, special`（或韩文列名自动映射）
+
+Demo link
+https://hanafuda.streamlit.app/
