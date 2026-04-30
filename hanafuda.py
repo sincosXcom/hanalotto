@@ -248,4 +248,4 @@ for i in range(0, 45, cols_per_row):
                 label_visibility="collapsed"
             )
 
-st.caption("💡 勾选复选框即可选号，最多6个。已选号码会实时显示在上方。Designed by SINCOSXcom")
+st.caption("💡 勾选复选框即可选号，最多6个。已选号码会实时显示在上方。Designed by sincosXcom")
