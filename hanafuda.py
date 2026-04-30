@@ -5,7 +5,7 @@ import os
 import random
 from collections import Counter
 
-st.set_page_config(page_title="花图乐透 – 选号器", layout="wide")
+st.set_page_config(page_title="花图乐透 – HANALOTTO", layout="wide")
 
 # ========== 数据加载 ==========
 @st.cache_data
@@ -135,7 +135,7 @@ if "prediction" not in st.session_state:
     st.session_state.prediction = None   # 存储预测结果 (main, special)
 
 # ========== 左侧边栏 ==========
-st.sidebar.header("📜 查询往期开奖")
+st.sidebar.header("📜 HISTORY")
 options = [f"{int(row['issue'])}期 ({str(row.get('date',''))[:10]})" for _, row in df.iterrows()]
 selected_option = st.sidebar.selectbox("选择期数", options, index=len(df)-1, key="sidebar_select")
 selected_idx = options.index(selected_option)
@@ -160,7 +160,7 @@ if st.sidebar.button("🔮 生成预测号码", use_container_width=True):
     st.rerun()
 
 # ========== 顶部浏览区 ==========
-st.markdown("### 📺 Hanafuda + Korea LOTTO 开奖号码")
+st.markdown("### 📺 Hanafuda + Korea LOTTO 2026")
 
 col_left, col_mid, col_right = st.columns([1, 8, 1])
 with col_left:
