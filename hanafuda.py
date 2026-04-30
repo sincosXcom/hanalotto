@@ -160,7 +160,7 @@ if st.sidebar.button("🔮 生成预测号码", use_container_width=True):
     st.rerun()
 
 # ========== 顶部浏览区 ==========
-st.markdown("### 📺 开奖号码浏览（左右按钮 + 索引条）")
+st.markdown("### 📺 Hanafuda + Korea LOTTO 开奖号码")
 
 col_left, col_mid, col_right = st.columns([1, 8, 1])
 with col_left:
